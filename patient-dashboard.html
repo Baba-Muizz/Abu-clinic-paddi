@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/dashboard-template.css" />
+    <link rel="stylesheet" href="css/appointments.css" />
+    <link rel="stylesheet" href="css/patient-dashboard.css" />
+
+    <title>Patient Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-nav">
+        <div class="header">
+          <!-- <img src="img/Logo.png" alt="#" /> -->
+          <h2> &#9769; ABU Clinic Paddi</h2>
+        </div>
+        <ul class="side-nav-links">
+          <li class="active">
+            <a href="/patient-dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+          </li>
+          <li>
+            <a href="/patient-appointment.html"
+              ><i class="fas fa-list"></i> <span>Appointments</span></a
+            >
+          </li>
+          <li>
+            <a href="/health-tips.html"
+              ><i class="fas fa-heartbeat"></i><span>Health Tips</span></a
+            >
+          </li>
+          <li>
+            <a href="/patient-notifications.html"
+              ><i class="fas fa-bell"></i><span>Notifications</span></a
+            >
+          </li>
+          <li>
+            <a href="patient-profile.html"><i class="fas fa-user"></i> <span>Profile</span></a>
+          </li>
+          <li>
+            <a href="/patient-settings.html"><i class="fas fa-cog"></i> <span>Settings</span></a>
+          </li>
+          <li class="log-out" onclick="modal();">
+           <i class="fas fa-sign-out"></i> <span>Logout</span>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="top-nav">
+          <div class="page-name">
+            <i class="fas fa-bars"></i>
+            <p>Dashboard</p>
+          </div>
+          <div class="profile-details">
+            <!-- Use the search only if it is on your page -->
+            <!-- <div class="search-field">
+              <input type="text" placeholder="Search for something" />
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+            </div> -->
+            <div class="notification-icons">
+              <div class="message-icon">
+                <i class="fas fa-cog"></i>
+              </div>
+              <div class="bell-icon">
+                <i class="fas fa-bell"></i>
+              </div>
+            </div>
+            <img src="img/patient.jpg" alt="" class="top-img" />
+          </div>
+        </div>
+
+        <div class="main-content">
+          
+          <div class="patient-info">
+            <div class="patient">
+
+              <div class="patient-greet">
+              <p>Good Morning</p> <br>
+              <img src="img/sunrise (1).png" alt="">
+              </div>
+              
+
+              <div class="patient-name">
+                <img src="img/patient.jpg" alt="" class="patient-img" />
+
+              <div class="patient-details">
+                <p class="pat-name">Abiola Odeyemi </p>
+              <p class="hosed">Hospital ID: <span class="hos-num">TKI545</span></p>
+              </div>
+              
+              </div>
+
+            </div>
+
+            <div class="total-appointment">
+              <p>Total Appointments</p>
+              <div class="total">
+                <i class="fas fa-hospital fa-4x "></i>
+                <p>12</p>
+              </div>
+              
+            </div>
+
+            <div class="new-appointments">
+              <p><a href="/book-appointment.html"> New Appointment</a> </p>
+              <img src="img/plus sign.png" alt="">
+            </div>
+  
+          </div>
+          
+
+          <div class="tableComponent">
+            <div class="tableTopRow">
+              <div>
+                <select name="label"  class="filterOption">
+                  <option value="all">All</option>
+                  <option value="pending">Pending</option>
+                  <option value="cancelled">Cancelled</option>
+                  <option value="completed">Completed</option>
+                  </select>
+              </div>
+              <div>
+                <img src="./img/Elipses (3).png" class="elipses"/>
+              </div> 
+            </div>
+            <table>
+              <thead>
+                <th>
+                  Doctor Assigned</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Contact</th>
+                <th>Status</th>
+              </thead>
+              <tbody id="table-body-ad">
+              
+              </tbody>
+            </table>
+            <div class="tableControls">
+              <div class="control-box">
+                <p style="font-weight: 700;"><<</p>
+              </div>
+              <div class="control-box">
+                <p style="font-weight: bold;"><</p>
+              </div>
+              <div class="control-box">
+               <p>1</p>
+              </div>
+              <div class="control-box">
+                <p style="font-weight: 700;">></p>
+              </div>
+              <div class="control-box">
+                <p style="font-weight: 700;">>></p>
+              </div>
+            </div>
+            <button class="afterTable">
+              <a href="/patient-appointment.html">
+              View all
+              </a>
+            </button>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="log-out-wrap">
+        <p>Are you sure you want to log out?</p>
+        <div class="button-wrap">
+            <button class="warning" onclick="signOut();">Yes</button>
+            <button class="blue" onclick="modal();">No</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="appointment-details">
+      <div class="log-out-wrap">
+        <p>Do you want to cancel this appointment?</p>
+        <div class="button-wrap">
+          <button id="cancel-btn" class="blue">Yes</button>
+          <button class="warning" onclick="openAppointments();">No</button>
+        </div>
+      </div>
+    </div>
+  <script src="js/index.js"></script>
+    <script src="js/patient-dashboard.js"></script>
+    <script src="/js/topnav.js"></script>
+  </body>
+</html>
