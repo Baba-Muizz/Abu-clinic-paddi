@@ -19,9 +19,9 @@ function loginAuth() {
   let userDb = JSON.parse(localStorage.getItem("userDB"));
 
   if (usernameSignin.value == "") {
-    usernameErr.innerText = "Username cannot be empty";
+    usernameErr.innerText = "Medical File Number cannot be empty";
   } else if (passwordSignin.value == "") {
-    passwordErr.innerText = "Password cannot be empty";
+    passwordErr.innerText = "Select Date cannot be empty";
   } else {
     if (userDb) {
       userDb.forEach((personObj) => {
@@ -42,7 +42,7 @@ function loginAuth() {
         } else if (usernameSignin.value == "ad10001") {
           window.location.assign("admin-dashboard.html");
         } else {
-          loginErr.innerText = "Username and password does not match";
+          loginErr.innerText = "Medical File Number and password does not match";
         }
       });
     } else {
