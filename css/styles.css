@@ -18,7 +18,7 @@ html{
 header{
   height: 80px;
   width: 100%;
-  background-color: #00A8DB;
+  background-color: #00db12;
   padding: 0 5%;
   margin: 0 auto;
   display: flex;
@@ -39,7 +39,7 @@ img {
 .btn{
   padding: 0.7rem 1.8rem;
   font-size: 1.8rem;
-  color: #00A8DB;
+  color:#00db12;
   background-color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -86,7 +86,7 @@ img {
 
 .heroleft a button{
   padding: 1rem 1.5rem;
-  background-color: #00A8DB;
+  background-color: #00db12;
   border: none;
   font-size: 2rem;
   color: #fff;
@@ -134,7 +134,7 @@ img {
 }
 
 .help{
-  color: #00A8DB;
+  color: #00db12;
 }
 
 .quality-system-content{
@@ -214,7 +214,7 @@ img {
   text-transform: uppercase;
   color: #fff;
   font-family: 'inter';
-  background-color: #00A8DB;
+  background-color: #00db12;
   border: none;
   border-radius: 0.7rem;
   font-size: 1.2rem;
@@ -258,7 +258,7 @@ img {
 .get-in-touch a button{
   padding: 0.9rem;
   width: 25rem;
-  background-color: #00A8DB;
+  background-color: #00db12;
   border: none;
   color: #fff;
   text-transform: uppercase;

@@ -33,7 +33,7 @@ img {
   width: 240px;
   padding: 0 0 0 20px;
   height: 100vh;
-  background: linear-gradient(#00e3d5, #00a8db);
+  background: linear-gradient(#00e3d5, #00db12);
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -89,7 +89,7 @@ img {
 .side-nav-links li.active {
   border-radius: 15px 0 0 15px;
   background-color: white;
-  color: #00a8db;
+  color: #00db12;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 .side-nav-links li.active:hover {
@@ -204,7 +204,7 @@ img {
   align-items: center;
   padding: 20px 30px;
   color: white;
-  background: linear-gradient(-90deg, #00e3d5, #00a8db);
+  background: linear-gradient(-90deg, #00e3d5, #00db12);
 }
 .welcome-admin h3 {
   font-size: 30px;
@@ -227,7 +227,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #00a8db;
+  background-color: #00db12;
   color: white;
   font-weight: bold;
 }
@@ -267,7 +267,7 @@ img {
   width: 50%;
 }
 .doctors-block-header button {
-  background-color: #00a8db;
+  background-color: #00db12;
   width: 120px;
   height: 35px;
   color: white;
@@ -295,7 +295,7 @@ img {
   background-color: rgb(230, 0, 0);
 }
 .blue {
-  background-color: #00a8db;
+  background-color: #00db12;
 }
 
 /* -------MODAL-------- */
@@ -342,7 +342,7 @@ img {
   margin-top: 30px;
 }
 .edit-profile {
-  background-color: #00a8db;
+  background-color: #00db12;
   color: white;
   padding: 10px 15px;
   margin-right: 40px;
@@ -353,8 +353,8 @@ img {
 }
 .edit-profile:hover {
   background-color: transparent;
-  color: #00a8db;
-  border: 1px solid #00a8db;
+  color: #00db12;
+  border: 1px solid #00db12;
   cursor: pointer;
 }
 
@@ -383,7 +383,7 @@ img {
   height: 40px;
 }
 .tips-item button {
-  background-color: #00a8db;
+  background-color: #00db12;
   color: white;
   display: block;
   width: 100px;

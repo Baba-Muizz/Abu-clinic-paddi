@@ -1,12 +1,12 @@
 .top-nav i.fa-cog, .top-nav i.fa-bell{
-  color: #00A8DB;
+  color: #00db12;
 }
 
   button.new-appointments{
     height: 40px;
     width: 180px;
     display: flex;
-    background-color: #00a8db;
+    background-color: #00db12;
     color: aliceblue;
     align-items: center;
     cursor: pointer;
@@ -73,7 +73,7 @@
   }
 
   table thead{
-    background-color: #00DED6;
+    background-color: #00dea3;
     color: #fff;
     height: 50px;
     
